@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Navber = () => {
     return (
-        <div className="bg-blue py-3 md:px-2 px-4">
+        <div className="bg-blue shadow-md shadow-black fixed top-0 left-0 right-0 py-3 md:px-2 px-4">
             <nav className="container text-[#e7e5e5] flex items-center justify-between font-fontpp mx-auto">
                 {/* nav left */}
                 <h4 className="md:text-xl rounded-md border border-nevy px-3 py-2 inline font-bold text-nevy">Prosanta</h4>
@@ -35,7 +35,7 @@ const Navber = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink className='rounded-md border border-nevy px-3 py-2 inline  text-nevy'>
+                            <NavLink className='rounded-md border  border-nevy px-3 py-2 inline  text-nevy'>
                                 Resume
                             </NavLink>
                         </li>

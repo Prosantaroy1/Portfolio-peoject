@@ -1,8 +1,13 @@
+import About from "../About/About";
+import Banner from "../Banner/Banner";
+import Skill from "../Skill/Skill";
 
 const Home = () => {
     return (
-        <div>
-            <h4>Home</h4>
+        <div className="bg-blue">
+            <Banner/>
+            <About/>
+            <Skill/>
         </div>
     );
 };
