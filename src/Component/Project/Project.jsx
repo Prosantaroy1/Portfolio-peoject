@@ -5,11 +5,12 @@ import img2 from '../../../public/img/asdasd123.webp'
 import img3 from '../../../public/img/landing.png'
 import img4 from '../../../public/img/orebi.png'
 import img5 from '../../../public/img/facebook.png'
+import img6 from '../../../public/img/tpscholl.png'
 
 
 const Project = () => {
     return (
-        <div className="text-white py-14 md:px-32 px-3">
+        <div id='project' className="text-white py-14 md:px-32 px-3">
             <div className="container font-fontpp mx-auto">
                 {/* titile project */}
                 <h4 className="text-center text-4xl font-semibold">PROJECTS</h4>
@@ -185,6 +186,42 @@ const Project = () => {
                                     <button className='border border-nevy px-4 py-2 hover:translate-x-3 delay-200 duration-200font-medium text-nevy rounded-lg text-xl'>Live</button>
                                 </NavLink>
                             </div>
+                        </div>
+                    </div>
+                    {/* 
+                     -----------six
+                     ------ */}
+                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-wrap justify-between'>
+                        {/* titile part*/}
+                        <div className='font-fontpp space-y-4'>
+                            <h3 className='text-2xl font-medium'>TP-School Website Design & Development.</h3>
+                            <p className='md:w-[480px]'>
+                                TP-School built with the dynamic capabilities of React.js and Tailwind
+                                delivers a seamless and experience for users across all devices.
+                            </p>
+                            {/* tools */}
+                            <ul className='flex pl-4 text-[#a09e9e] flex-wrap items-center gap-5'>
+                                <li>React</li>
+                                <li>Firebase</li>
+                                <li>Tailwind</li>
+                                <li>React-router</li>
+
+                            </ul>
+                            {/* link */}
+                            <div className='font-fontpp flex items-center gap-7'>
+                                <NavLink to='https://github.com/Prosantaroy1/TP-School-Project' target='_blank'>
+                                    <button className='border border-nevy px-4 py-2 hover:translate-x-3 delay-200 duration-200 font-medium text-nevy rounded-lg text-xl'>Github</button>
+                                </NavLink>
+                                <NavLink to='https://tpschooltech.netlify.app/' target='_blank'>
+                                    <button className='border border-nevy px-4 py-2 hover:translate-x-3 delay-200 duration-200font-medium text-nevy rounded-lg text-xl'>Live</button>
+                                </NavLink>
+                            </div>
+                        </div>
+                        {/* img part*/}
+                        <div>
+                            <NavLink to='https://tpschooltech.netlify.app/' target='_blank'>
+                                <img src={img6} alt="" className='md:w-[520px] h-96 bg-white p-3 shadow-xl shadow-black' />
+                            </NavLink>
                         </div>
                     </div>
 

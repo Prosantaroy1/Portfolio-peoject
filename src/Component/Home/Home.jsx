@@ -5,11 +5,11 @@ import Skill from "../Skill/Skill";
 
 const Home = () => {
     return (
-        <div className="bg-blue">
-            <Banner/>
-            <About/>
-            <Skill/>
-            <Project/>
+        <div id="home" className="bg-blue ">
+            <Banner />
+            <About />
+            <Skill />
+            <Project />
         </div>
     );
 };

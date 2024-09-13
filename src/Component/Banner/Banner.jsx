@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+
+import { Link } from "react-scroll";
 
 const Banner = () => {
     return (
@@ -12,12 +13,25 @@ const Banner = () => {
                     I am a Frontend Developer  in  ReactJs, Javascript, Tailwind CSS,Bootstrap CSS, EJS and Intermediate NodeJS, ExpressJs,
                     MongoDB. I have a strong foundation in front-end
                     and skilled in creating user-friendly and responsive web applications using React and ecosystem.
-                    <NavLink><span className="text-nevy font-semibold ">Learn More</span></NavLink>
+                    <Link to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}><span className="text-nevy cursor-pointer font-semibold ">Learn More</span></Link>
                 </p>
                 {/* btn */}
-                <button className="rounded-md border border-nevy px-5 font-medium py-3 inline  text-nevy">
-                    view my project
-                </button>
+                <div>
+                    <Link
+                        to="project"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}>
+                        <button className="rounded-md border border-nevy px-5 font-medium py-3 inline  text-nevy">
+                            view my project
+                        </button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

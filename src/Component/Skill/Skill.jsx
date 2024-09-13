@@ -2,7 +2,7 @@ import { GoCheckCircle } from "react-icons/go";
 
 const Skill = () => {
     return (
-        <div className="mt-14 py-16 md:px-32 px-3 text-white">
+        <div id="skills" className="mt-14 py-16 md:px-32 px-3 text-white">
             <div className="container  font-fontppmx-auto">
                 {/* title */}
                 <h3 className="text-4xl font-bold text-center">My Skills</h3>

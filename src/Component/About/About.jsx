@@ -3,7 +3,7 @@ import img1 from '../../../public/img/about.jpg'
 
 const About = () => {
     return (
-        <div className='text-white md:px-32 px-3'>
+        <div id='about' className='text-white md:px-32 px-3'>
             <div className="container font-fontpp mx-auto">
                 <div className='space-y-3 '>
                     <h3 className='text-4xl text-center font-bold'>ABOUT ME</h3>
