@@ -65,7 +65,7 @@ const Project = () => {
                         </div>
                     </div>
                     {/*---------- second ----------*/}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-col-reverse justify-between'>
+                    <div className='flex pt-20 items-center md:gap-2 gap-11 md:flex-row flex-col-reverse justify-between'>
                         {/* titile part*/}
                         <div className='font-fontpp space-y-4'>
                             <h3 className='text-2xl font-medium'>Twitter Website Clone Design.</h3>
@@ -134,7 +134,7 @@ const Project = () => {
                         </div>
                     </div>
                     {/* --------four -----------*/}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-col-reverse justify-between'>
+                    <div className='flex pt-20 items-center md:gap-2 gap-11 md:flex-row flex-col-reverse justify-between'>
                         {/* titile part*/}
                         <div className='font-fontpp space-y-4'>
                             <h3 className='text-2xl font-medium'>Ecommerce Website Design & Development.</h3>
@@ -204,7 +204,7 @@ const Project = () => {
                     {/* 
                      -----------six
                      ------ */}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-col-reverse justify-between'>
+                    <div className='flex pt-20 items-center md:gap-2 gap-11 md:flex-row flex-col-reverse justify-between'>
                         {/* titile part*/}
                         <div className='font-fontpp space-y-4'>
                             <h3 className='text-2xl font-medium'>TP-School Website Design & Development.</h3>
