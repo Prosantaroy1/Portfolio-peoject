@@ -6,15 +6,28 @@ import img3 from '../../../public/img/landing.png'
 import img4 from '../../../public/img/orebi.png'
 import img5 from '../../../public/img/facebook.png'
 import img6 from '../../../public/img/tpscholl.png'
-
+import { motion } from "framer-motion"
+import { Slidedown } from '../../aniamtion/animation';
 
 const Project = () => {
     return (
         <div id='project' className="text-white py-14 md:px-32 px-3">
             <div className="container font-fontpp mx-auto">
                 {/* titile project */}
-                <h4 className="text-center text-4xl font-semibold">PROJECTS</h4>
-                <p className="text-xl font-normal py-3 text-center">Already I have Developed these Projects.</p>
+                <motion.h4 
+                variants={Slidedown(0.5)}
+                initial='initial'
+                whileInView={"animate"}
+                className="text-center text-4xl font-semibold">
+                    PROJECTS
+                </motion.h4>
+                <motion.p
+                variants={Slidedown(0.8)}
+                initial='initial'
+                whileInView={"animate"}
+                 className="text-xl font-normal py-3 text-center">
+                    Already I have Developed these Projects.
+                </motion.p>
                 {/* project */}
                 <div className="py-12">
                     {/*---------- first----------- */}
@@ -52,7 +65,7 @@ const Project = () => {
                         </div>
                     </div>
                     {/*---------- second ----------*/}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-wrap justify-between'>
+                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-col-reverse justify-between'>
                         {/* titile part*/}
                         <div className='font-fontpp space-y-4'>
                             <h3 className='text-2xl font-medium'>Twitter Website Clone Design.</h3>
@@ -121,7 +134,7 @@ const Project = () => {
                         </div>
                     </div>
                     {/* --------four -----------*/}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-wrap justify-between'>
+                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-col-reverse justify-between'>
                         {/* titile part*/}
                         <div className='font-fontpp space-y-4'>
                             <h3 className='text-2xl font-medium'>Ecommerce Website Design & Development.</h3>
@@ -191,7 +204,7 @@ const Project = () => {
                     {/* 
                      -----------six
                      ------ */}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-wrap justify-between'>
+                    <div className='flex pt-20 items-center md:gap-2 gap-11 flex-col-reverse justify-between'>
                         {/* titile part*/}
                         <div className='font-fontpp space-y-4'>
                             <h3 className='text-2xl font-medium'>TP-School Website Design & Development.</h3>

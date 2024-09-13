@@ -3,7 +3,8 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
-
+import { motion } from "framer-motion"
+import { Slideup } from "../../../aniamtion/animation";
 
 const Navber = () => {
     // toggol
@@ -16,11 +17,21 @@ const Navber = () => {
                 <div className="bg-blue  shadow-md shadow-black fixed top-0 left-0 right-0 py-5 md:px-2 px-4">
                     <nav className="container text-[#e7e5e5] flex items-center justify-between font-fontpp mx-auto">
                         {/* nav left */}
-                        <h4 className="md:text-xl rounded-md border border-nevy px-3 py-2 inline font-bold text-nevy">Prosanta</h4>
+                        <motion.h4
+                            variants={Slideup(0.04)}
+                            initial='initial'
+                            animate="animate"
+                            className="md:text-xl rounded-md border border-nevy px-3 py-2 inline font-bold text-nevy">
+                            Prosanta
+                        </motion.h4>
                         {/* nav right */}
                         <div className="hidden md:flex">
                             <ul className="flex font-medium  items-center gap-8">
-                                <li>
+                                <motion.li
+                                    variants={Slideup(0.04)}
+                                    initial='initial'
+                                    animate="animate"
+                                >
                                     <Link
                                         to="home"
                                         spy={true}
@@ -29,8 +40,11 @@ const Navber = () => {
                                         duration={500}>
                                         <NavLink >Home</NavLink>
                                     </Link>
-                                </li>
-                                <li>
+                                </motion.li>
+                                <motion.li
+                                    variants={Slideup(0.06)}
+                                    initial='initial'
+                                    animate="animate">
                                     <Link
                                         to="about"
                                         spy={true}
@@ -42,8 +56,11 @@ const Navber = () => {
                                             <span className="text-nevy">01.</span>About
                                         </NavLink>
                                     </Link>
-                                </li>
-                                <li>
+                                </motion.li>
+                                <motion.li
+                                    variants={Slideup(0.08)}
+                                    initial='initial'
+                                    animate="animate">
                                     <Link
                                         to="project"
                                         spy={true}
@@ -54,8 +71,11 @@ const Navber = () => {
                                             <span className="text-nevy">02.</span>Project
                                         </NavLink>
                                     </Link>
-                                </li>
-                                <li>
+                                </motion.li>
+                                <motion.li
+                                    variants={Slideup(0.10)}
+                                    initial='initial'
+                                    animate="animate">
                                     <Link
                                         to="skills"
                                         spy={true}
@@ -66,8 +86,11 @@ const Navber = () => {
                                             <span className="text-nevy">03.</span>Skills
                                         </NavLink>
                                     </Link>
-                                </li>
-                                <li>
+                                </motion.li>
+                                <motion.li
+                                    variants={Slideup(0.12)}
+                                    initial='initial'
+                                    animate="animate">
                                     <Link
                                         to="contact"
                                         spy={true}
@@ -78,12 +101,15 @@ const Navber = () => {
                                             <span className="text-nevy">04.</span>Contact
                                         </NavLink>
                                     </Link>
-                                </li>
-                                <li>
+                                </motion.li>
+                                <motion.li
+                                    variants={Slideup(0.14)}
+                                    initial='initial'
+                                    animate="animate">
                                     <NavLink className='rounded-md border  border-nevy px-3 py-2 inline  text-nevy'>
                                         Resume
                                     </NavLink>
-                                </li>
+                                </motion.li>
                             </ul>
                         </div>
                         {/* responsive */}
@@ -98,7 +124,7 @@ const Navber = () => {
             {/* moblie */}
             <div className="flex md:hidden">
                 {
-                    open && <div className=" py-5 bg-blue w-full  absolute top-20 left-0  text-white ">
+                    open && <div className=" py-5 bg-blue w-full h-screen  absolute top-20 left-0  text-white ">
                         <ul className="flex flex-col  justify-center space-y-6 font-medium  items-center gap-8">
                             <li>
                                 <Link

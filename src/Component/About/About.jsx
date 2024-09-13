@@ -1,16 +1,28 @@
 import { IoMdDownload } from 'react-icons/io';
 import img1 from '../../../public/img/about.jpg'
+import { motion } from "framer-motion"
+import { Slidedown } from '../../aniamtion/animation';
 
 const About = () => {
     return (
         <div id='about' className='text-white md:px-32 px-3'>
             <div className="container font-fontpp mx-auto">
                 <div className='space-y-3 '>
-                    <h3 className='text-4xl text-center font-bold'>ABOUT ME</h3>
-                    <p className='font-light md:w-[650px] mx-auto text-[#a09e9e] md:text-xl text-center'>
+                    <motion.h3
+                    variants={Slidedown(0.4)}
+                    initial='initial'
+                    whileInView={"animate"}
+                     className='text-4xl text-center font-bold'>
+                        ABOUT ME
+                    </motion.h3>
+                    <motion.p 
+                    variants={Slidedown(0.6)}
+                    initial='initial'
+                    whileInView={"animate"}
+                    className='font-light md:w-[650px] mx-auto text-[#a09e9e] md:text-xl text-center'>
                         Here you will find more information about me, what I do,
                         and my current skills mostly in terms of programming and technology
-                    </p>
+                    </motion.p>
                 </div>
                 <div className='flex pt-16 items-center flex-wrap justify-between'>
                     {/* img part */}
@@ -29,7 +41,7 @@ const About = () => {
                         </p>
                         {/* btn */}
                         <button className='border cursor-pointer flex items-center gap-2 border-nevy px-4 py-2 text-nevy rounded-md'>
-                            Download CV <IoMdDownload className='text-2xl'/>
+                            Download CV <IoMdDownload className='text-2xl' />
                         </button>
                     </div>
                 </div>
