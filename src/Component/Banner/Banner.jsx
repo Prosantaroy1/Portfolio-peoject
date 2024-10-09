@@ -4,7 +4,7 @@ import { Slidedown } from "../../aniamtion/animation";
 
 const Banner = () => {
     return (
-        <div className="text-white py-44 md:px-32 px-3">
+        <div className="text-white py-44 lg:px-32 px-4">
             <div className="container   font-fontpp space-y-4 mx-auto">
                 {/* banner title */}
                 <motion.h4
@@ -32,7 +32,7 @@ const Banner = () => {
                     variants={Slidedown(0.8)}
                     initial='initial'
                     animate="animate"
-                    className="lg:w-2/3 text-[#a09e9e] md:text-xl font-normal">
+                    className=" w-full xl:w-2/3 text-[#a09e9e] text-balance md:text-xl font-normal">
                     I am a Frontend Developer  in  ReactJs, Javascript, Tailwind CSS,Bootstrap CSS, EJS and Intermediate NodeJS, ExpressJs,
                     MongoDB. I have a strong foundation in front-end
                     and skilled in creating user-friendly and responsive web applications using React and ecosystem.

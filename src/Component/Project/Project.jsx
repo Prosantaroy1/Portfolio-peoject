@@ -11,7 +11,7 @@ import { Slidedown } from '../../aniamtion/animation';
 
 const Project = () => {
     return (
-        <div id='project' className="text-white py-14 md:px-32 px-3">
+        <div id='project' className="text-white py-14 lg:px-32 px-4">
             <div className="container font-fontpp mx-auto">
                 {/* titile project */}
                 <motion.h4 
@@ -29,19 +29,19 @@ const Project = () => {
                     Already I have Developed these Projects.
                 </motion.p>
                 {/* project */}
-                <div className="py-12">
+                <div className="py-12 w-full">
                     {/*---------- first----------- */}
-                    <div className='flex items-center md:gap-2 gap-11 flex-wrap justify-between'>
+                    <div className='flex flex-col xl:flex-row gap-10 items-center'>
                         {/* img part*/}
-                        <div>
+                        <div className='w-full xl:w-1/2'>
                             <NavLink to='https://it-agency-bd.netlify.app/' target='_blank'>
-                                <img src={img1} alt="" className='md:w-[520px] h-96 bg-white p-3 shadow-xl shadow-black' />
+                                <img src={img1} alt="" className='w-full h-96 bg-white p-3 shadow-xl shadow-black' />
                             </NavLink>
                         </div>
                         {/* titile part*/}
-                        <div className='font-fontpp space-y-4'>
+                        <div className='font-fontpp w-full xl:w-2/3  space-y-4'>
                             <h3 className='text-2xl font-medium'>Agency Website Design & Development.</h3>
-                            <p className='md:w-[480px]'>
+                            <p className=''>
                                 Agency built with the dynamic capabilities of React.js and the Tailwind CSS or React-router
                                 delivers a seamless and experience for users across all devices.
                             </p>
@@ -65,11 +65,11 @@ const Project = () => {
                         </div>
                     </div>
                     {/*---------- second ----------*/}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 md:flex-row flex-col-reverse justify-between'>
+                    <div className='mt-14 flex flex-col-reverse xl:flex-row items-center gap-10'>
                         {/* titile part*/}
-                        <div className='font-fontpp space-y-4'>
+                        <div className='font-fontpp w-full xl:w-2/3 space-y-4'>
                             <h3 className='text-2xl font-medium'>Twitter Website Clone Design.</h3>
-                            <p className='md:w-[480px]'>
+                            <p className='text-balance'>
                                 Twitter built with the dynamic capabilities of React.js and the Node or CRUD Operation
                                 delivers a seamless and experience for users across all devices.
                             </p>
@@ -93,24 +93,24 @@ const Project = () => {
                             </div>
                         </div>
                         {/* img part*/}
-                        <div>
+                        <div className='w-full xl:w-1/2'>
                             <NavLink to='https://twiiterclone12.netlify.app/login' target='_blank'>
-                                <img src={img2} alt="" className='md:w-[520px] h-96 bg-white p-3 shadow-xl shadow-black' />
+                                <img src={img2} alt="" className='w-full h-96 bg-white p-3 shadow-xl shadow-black' />
                             </NavLink>
                         </div>
                     </div>
                     {/* ------------thrid---------- */}
-                    <div className='flex items-center pt-20 md:gap-2 gap-11 flex-wrap justify-between'>
+                    <div className='mt-14 flex flex-col xl:flex-row items-center gap-10'>
                         {/* img part*/}
-                        <div>
+                        <div className='w-full xl:w-1/2'>
                             <NavLink to='https://leadingpage12.netlify.app/' target='_blank'>
-                                <img src={img3} alt="" className='md:w-[520px] h-96 bg-white p-3 shadow-xl shadow-black' />
+                                <img src={img3} alt="" className='w-full h-96 bg-white p-3 shadow-xl shadow-black' />
                             </NavLink>
                         </div>
                         {/* titile part*/}
-                        <div className='font-fontpp space-y-4'>
-                            <h3 className='text-2xl font-medium'>Single Landing Website Design with React..</h3>
-                            <p className='md:w-[480px]'>
+                        <div className='font-fontpp w-full xl:w-2/3 space-y-4'>
+                            <h3 className='text-2xl font-medium'>Single Landing Website Design with React.</h3>
+                            <p className='text-balance'>
                                 Single Landing built with the dynamic capabilities of React.js and Animation Framer mation or React-router
                                 delivers a seamless and experience for users across all devices.
                             </p>
@@ -134,11 +134,11 @@ const Project = () => {
                         </div>
                     </div>
                     {/* --------four -----------*/}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 md:flex-row flex-col-reverse justify-between'>
+                    <div className='mt-14 flex flex-col-reverse xl:flex-row gap-10 items-center'>
                         {/* titile part*/}
-                        <div className='font-fontpp space-y-4'>
+                        <div className='font-fontpp w-full xl:w-2/3 space-y-4'>
                             <h3 className='text-2xl font-medium'>Ecommerce Website Design & Development.</h3>
-                            <p className='md:w-[480px]'>
+                            <p className='text-balance'>
                                 Ecommerce built with the dynamic capabilities of React.js and Redux or Authentication
                                 delivers a seamless and experience for users across all devices.
                             </p>
@@ -161,26 +161,26 @@ const Project = () => {
                             </div>
                         </div>
                         {/* img part*/}
-                        <div>
+                        <div className='w-full xl:w-1/2'>
                             <NavLink to='https://tp-shop.netlify.app/' target='_blank'>
-                                <img src={img4} alt="" className='md:w-[520px] h-96 bg-white p-3 shadow-xl shadow-black' />
+                                <img src={img4} alt="" className='w-full h-96 bg-white p-3 shadow-xl shadow-black' />
                             </NavLink>
                         </div>
                     </div>
                     {/* 
                      -----------five
                      ------ */}
-                    <div className='flex items-center pt-20 md:gap-2 gap-11 flex-wrap justify-between'>
+                    <div className='mt-14 flex flex-col xl:flex-row items-center gap-10'>
                         {/* img part*/}
-                        <div>
+                        <div className='w-full xl:w-1/2'>
                             <NavLink to='https://socialprosantafd.netlify.app/' target='_blank'>
-                                <img src={img5} alt="" className='md:w-[520px] h-96 bg-white p-3 shadow-xl shadow-black' />
+                                <img src={img5} alt="" className='w-full h-96 bg-white p-3 shadow-xl shadow-black' />
                             </NavLink>
                         </div>
                         {/* titile part*/}
-                        <div className='font-fontpp space-y-4'>
+                        <div className='font-fontpp w-full xl:w-2/3 space-y-4'>
                             <h3 className='text-2xl font-medium'>Facebook clone with HTML CSS</h3>
-                            <p className='md:w-[480px]'>
+                            <p className='text-balance'>
                                 Facebook built with core HTML CSS
                                 delivers a seamless and experience for users across all devices.
                             </p>
@@ -204,11 +204,11 @@ const Project = () => {
                     {/* 
                      -----------six
                      ------ */}
-                    <div className='flex pt-20 items-center md:gap-2 gap-11 md:flex-row flex-col-reverse justify-between'>
+                    <div className='mt-14 flex flex-col-reverse xl:flex-row gap-10 items-center'>
                         {/* titile part*/}
-                        <div className='font-fontpp space-y-4'>
+                        <div className='font-fontpp w-full xl:w-2/3 space-y-4'>
                             <h3 className='text-2xl font-medium'>TP-School Website Design & Development.</h3>
-                            <p className='md:w-[480px]'>
+                            <p className='text-balance'>
                                 TP-School built with the dynamic capabilities of React.js and Tailwind
                                 delivers a seamless and experience for users across all devices.
                             </p>
@@ -231,9 +231,9 @@ const Project = () => {
                             </div>
                         </div>
                         {/* img part*/}
-                        <div>
+                        <div className='w-full xl:w-1/2'>
                             <NavLink to='https://tpschooltech.netlify.app/' target='_blank'>
-                                <img src={img6} alt="" className='md:w-[520px] h-96 bg-white p-3 shadow-xl shadow-black' />
+                                <img src={img6} alt="" className='w-full h-96 bg-white p-3 shadow-xl shadow-black' />
                             </NavLink>
                         </div>
                     </div>

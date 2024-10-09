@@ -9,7 +9,7 @@ import { Slideup } from "../../../aniamtion/animation";
 const Navber = () => {
     // toggol
     const [open, setOpen] = useState(false);
-
+    
 
     return (
         <>
@@ -106,7 +106,7 @@ const Navber = () => {
                                     variants={Slideup(0.14)}
                                     initial='initial'
                                     animate="animate">
-                                    <NavLink className='rounded-md border  border-nevy px-3 py-2 inline  text-nevy'>
+                                    <NavLink to='https://drive.google.com/file/d/1MiLiQ5YvrZ-2YhVq5xz2bF-9v6feqMky/view?usp=sharing' target="_blank" className='rounded-md border  border-nevy px-3 py-2 inline  text-nevy'>
                                         Resume
                                     </NavLink>
                                 </motion.li>
@@ -124,7 +124,7 @@ const Navber = () => {
             {/* moblie */}
             <div className="flex md:hidden">
                 {
-                    open && <div className=" py-5 bg-blue w-full h-screen  absolute top-20 left-0  text-white ">
+                    open && <div className=" py-5 bg-blue w-full h-screen  fixed z-30 top-20 left-0  text-white ">
                         <ul className="flex flex-col  justify-center space-y-6 font-medium  items-center gap-8">
                             <li>
                                 <Link
@@ -133,7 +133,7 @@ const Navber = () => {
                                     smooth={true}
                                     offset={-100}
                                     duration={500}>
-                                    <NavLink target="_top">Home</NavLink>
+                                    <NavLink onClick={()=>setOpen(false)} target="_top">Home</NavLink>
                                 </Link>
                             </li>
                             <li>
@@ -144,6 +144,7 @@ const Navber = () => {
                                     offset={-100}
                                     duration={500}>
                                     <NavLink target="_top"
+                                    onClick={()=>setOpen(false)} 
                                         className='flex items-center'>
                                         <span className="text-nevy">01.</span>About
                                     </NavLink>
@@ -156,7 +157,7 @@ const Navber = () => {
                                     smooth={true}
                                     offset={-100}
                                     duration={500}>
-                                    <NavLink target="_top" className='flex items-center'>
+                                    <NavLink target="_top" onClick={()=>setOpen(false)}  className='flex items-center'>
                                         <span className="text-nevy">02.</span>Project
                                     </NavLink>
                                 </Link>
@@ -168,7 +169,7 @@ const Navber = () => {
                                     smooth={true}
                                     offset={-100}
                                     duration={500}>
-                                    <NavLink target="_top" className='flex items-center'>
+                                    <NavLink onClick={()=>setOpen(false)}  target="_top" className='flex items-center'>
                                         <span className="text-nevy">03.</span>Skills
                                     </NavLink>
                                 </Link>
@@ -180,15 +181,15 @@ const Navber = () => {
                                     smooth={true}
                                     offset={-100}
                                     duration={500}>
-                                    <NavLink target="_top" className='flex items-center'>
+                                    <NavLink onClick={()=>setOpen(false)}  target="_top" className='flex items-center'>
                                         <span className="text-nevy">04.</span>Contact
                                     </NavLink>
                                 </Link>
                             </li>
                             <li>
-                                <NavLink className='rounded-md border  border-nevy px-3 py-2 inline  text-nevy'>
-                                    Resume
-                                </NavLink>
+                                <a href="www.youtube.com" target="_blank" onClick={()=>setOpen(false)}  className='rounded-md border  border-nevy px-3 py-2 inline  text-nevy'>
+                                   Resume
+                                </a>
                             </li>
                         </ul>
                     </div>

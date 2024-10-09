@@ -10,7 +10,7 @@ const Main = () => {
             <Outlet/>
             <Footer/>
             {/* link */}
-            <div className="fixed md:flex hidden bottom-20 left-8  text-white">
+            <div className="fixed lg:flex hidden bottom-20 left-8  text-white">
                 <ul className="flex  flex-col gap-6">
                     <li className="hover:-translate-y-3  transition-all delay-200">
                         <NavLink target="_blank" to='https://github.com/Prosantaroy1'><FaGithub className="text-4xl bg-white text-black p-2 rounded-full"/></NavLink>
